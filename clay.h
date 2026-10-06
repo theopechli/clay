@@ -2848,6 +2848,7 @@ void Clay__CalculateFinalLayout(float deltaTime, bool useStoredBoundingBoxes, bo
                             }},
                             .userData = currentElement->config.userData,
                             .id = Clay__HashNumber(currentElement->id, currentElement->children.length).id,
+                            .zIndex = root->zIndex,
                             .commandType = CLAY_RENDER_COMMAND_TYPE_BORDER,
                         };
                         Clay__AddRenderCommand(renderCommand);
